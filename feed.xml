@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>FC Fulbert - Actualités</title>
+    <link>https://fc-fulbert7.github.io/FC-Fulbert/</link>
+    <description>Flux RSS des actualités et événements du FC Fulbert</description>
+    <language>fr-FR</language>
+    <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
+
+    <item>
+      <title>Tournoi U15 - Dimanche 12 octobre</title>
+      <link>https://fc-fulbert7.github.io/FC-Fulbert/events/evt-2025-10-12-u15.html</link>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
+      <description>Tournoi amical U15 réunissant des clubs régionaux. Arbitrage assuré, petites restauration sur place.</description>
+      <guid>https://fc-fulbert7.github.io/FC-Fulbert/events/evt-2025-10-12-u15.html</guid>
+    </item>
+
+    <item>
+      <title>Match Seniors - Victoire 3-1</title>
+      <link>https://fc-fulbert7.github.io/FC-Fulbert/events/evt-2025-09-21-seniors-win.html</link>
+      <pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate>
+      <description>Résumé du match senior: performance notable de l'attaque, interviews et photos.</description>
+      <guid>https://fc-fulbert7.github.io/FC-Fulbert/events/evt-2025-09-21-seniors-win.html</guid>
+    </item>
+
+  </channel>
+</rss>

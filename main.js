@@ -204,6 +204,8 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       "image": ev.image ? new URL(ev.image, window.location.href).href : undefined,
       "description": ev.description || ev.summary,
+      "keywords": Array.isArray(ev.tags) ? ev.tags.join(', ') : undefined,
+      "url": ev.url || undefined,
       "organizer": {
         "@type": "SportsOrganization",
         "name": "FC Fulbert",
@@ -219,4 +221,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }, null, 2);
     document.head.appendChild(script);
   }
+
+  // Share handler: try navigator.share first, otherwise open the link (already provided as href)
+  document.querySelectorAll('.share').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      try {
+        const url = this.getAttribute('data-share-url') || this.href;
+        const text = this.getAttribute('data-share-text') || document.title;
+        if (navigator.share) {
+          e.preventDefault();
+          navigator.share({ title: document.title, text: text, url: url }).catch(() => {
+            // if user cancels or errors, fallback to opening the href
+            window.open(url, '_blank');
+          });
+        } else {
+          // let the href work (opens in new tab)
+        }
+      } catch (err) {
+        console.warn('Share failed', err);
+      }
+    });
+  });
 });

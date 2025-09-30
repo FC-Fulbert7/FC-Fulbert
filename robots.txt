@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 
-# Sitemap location (update the domain to your production URL)
-Sitemap: https://USERNAME.github.io/fcfulbert/sitemap.xml
+# Sitemap location
+Sitemap: https://fc-fulbert7.github.io/FC-Fulbert/sitemap.xml
+
+# If you need to block staging or admin pages, add them below.
+# Disallow: /admin/

@@ -11,7 +11,8 @@
       "image": "img/image.png",
       "contact_email": "events@fc-fulbert.fr",
       "cta": "S'inscrire",
-      "cta_link": "#inscription"
+      "cta_link": "#inscription",
+      "tags": ["tournoi","U15","football","Chartres","stade fulbert","événement sportif","inscription","jeunes","compétition","2025","club de foot","match","résultats","photos","arbitrage","entraînement"]
     },
     {
       "id": "evt-2025-09-21-seniors-win",
@@ -24,7 +25,9 @@
       "image": "img/image.png",
       "contact_email": "media@fc-fulbert.fr",
       "cta": "Voir le résumé",
-      "cta_link": "#actus"
+      "cta_link": "#actus",
+      "tags": ["match","seniors","victoire","football","Chartres","résultats","club de foot","photos","interview","2025","compétition"]
+
     }
   ]
 }

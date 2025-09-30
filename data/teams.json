@@ -1,8 +1,8 @@
 {
   "teams": [
-    {"id":"t-jeunes","name":"Jeunes (U7-U18)","coach":"Alex Martin","training":"Mercredi 17:30 - 19:00","email":"jeunes@fc-fulbert.fr","social":"jeunes_fcfulbert"},
-    {"id":"t-seniors","name":"Seniors","coach":"Pierre Dubois","training":"Mardi 19:00 - 21:00","email":"seniors@fc-fulbert.fr","social":"seniors_fcfulbert"},
-    {"id":"t-feminines","name":"Féminines","coach":"Sophie Legrand","training":"Jeudi 19:00 - 20:30","email":"feminines@fc-fulbert.fr","social":"fem_fcfulbert"},
-    {"id":"t-loisir","name":"Loisirs","coach":"Camille Roux","training":"Samedi 10:00 - 12:00","email":"loisir@fc-fulbert.fr","social":"loisir_fcfulbert"}
+  {"id":"t-jeunes","name":"Jeunes (U7-U18)","coach":"Alex Martin","training":"Mercredi 17:30 - 19:00","email":"jeunes@fc-fulbert.fr","social":"jeunes_fcfulbert","tags":["jeunes","U7","U9","U11","U13","U15","football","formation","entraîneur","FC Fulbert","Entrainement","Chartres"]},
+  {"id":"t-seniors","name":"Seniors","coach":"Pierre Dubois","training":"Mardi 19:00 - 21:00","email":"seniors@fc-fulbert.fr","social":"seniors_fcfulbert","tags":["seniors","compétition","championnat","football","entraîneur","FC Fulbert","Football Club","Chartres"]},
+  {"id":"t-feminines","name":"Féminines","coach":"Sophie Legrand","training":"Jeudi 19:00 - 20:30","email":"feminines@fc-fulbert.fr","social":"fem_fcfulbert","tags":["féminines","football féminin","mixité","entraîneur","compétition","FC Fulbert","Chartres"]},
+  {"id":"t-loisir","name":"Loisirs","coach":"Camille Roux","training":"Samedi 10:00 - 12:00","email":"loisir@fc-fulbert.fr","social":"loisir_fcfulbert","tags":["loisir","mixte","convivial","jeu","rencontre","FC Fulbert","Football","Chartres"]}
   ]
 }
