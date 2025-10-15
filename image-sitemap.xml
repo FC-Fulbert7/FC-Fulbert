@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://fc-fulbert.site/</loc>
+    <image:image>
+      <image:loc>https://fc-fulbert.site/img/logoFC.png</image:loc>
+      <image:title>Logo FC Fulbert - Football Club Fulbert Chartres</image:title>
+      <image:caption>Logo officiel du FC Fulbert</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fc-fulbert.site/img/image.png</image:loc>
+      <image:title>Stade Fulbert - FC Fulbert Football Club Chartres</image:title>
+      <image:caption>Vue du stade principal du FC Fulbert</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fc-fulbert.site/events/evt-2025-09-21-seniors-win.html</loc>
+    <image:image>
+      <image:loc>https://fc-fulbert.site/img/image.png</image:loc>
+      <image:title>Match Seniors - Victoire contre l'AS Saint-Prest</image:title>
+      <image:caption>Photos du match victorieux des seniors (3-1) contre l'AS Saint-Prest</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fc-fulbert.site/events/evt-2025-10-12-u15.html</loc>
+    <image:image>
+      <image:loc>https://fc-fulbert.site/img/image.png</image:loc>
+      <image:title>Tournoi U15 - FC Fulbert</image:title>
+      <image:caption>Tournoi U15 organisé par le FC Fulbert</image:caption>
+    </image:image>
+  </url>
+</urlset>

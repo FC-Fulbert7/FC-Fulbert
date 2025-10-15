@@ -1,8 +1,9 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Sitemap locations
 Sitemap: https://fc-fulbert.site/sitemap.xml
+Sitemap: https://fc-fulbert.site/image-sitemap.xml
 
 # If you need to block staging or admin pages, add them below.
 # Disallow: /admin/
