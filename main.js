@@ -242,4 +242,34 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // Gestion des boutons de catégorie dans la page d'effectif
+  const categoryButtons = document.querySelectorAll('.team-category-selector .category-btn');
+  const teamSections = document.querySelectorAll('.team-section');
+
+  if (categoryButtons.length > 0 && teamSections.length > 0) {
+    // Afficher la première section par défaut
+    teamSections[0].classList.add('active');
+    categoryButtons[0].classList.add('active');
+
+    categoryButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Retirer la classe active de tous les boutons
+        categoryButtons.forEach(btn => btn.classList.remove('active'));
+        // Ajouter la classe active au bouton cliqué
+        button.classList.add('active');
+
+        // Récupérer la catégorie sélectionnée
+        const selectedTeam = button.getAttribute('data-team');
+
+        // Masquer toutes les sections
+        teamSections.forEach(section => {
+          section.classList.remove('active');
+          if (section.id === `${selectedTeam}-team`) {
+            section.classList.add('active');
+          }
+        });
+      });
+    });
+  }
 });

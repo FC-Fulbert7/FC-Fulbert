@@ -224,7 +224,7 @@
       </div>
 
       <!-- Équipe U15 -->
-      <div class="team-section hidden" id="u15-team">
+      <div class="team-section" id="u15-team">
         <h2>Équipe U15 - Formation</h2>
         <div class="staff-section">
           <h3>Staff Technique</h3>
@@ -246,7 +246,7 @@
       </div>
 
       <!-- Équipe Féminine -->
-      <div class="team-section hidden" id="feminine-team">
+      <div class="team-section" id="feminine-team">
         <h2>Équipe Féminine</h2>
         <div class="staff-section">
           <h3>Staff Technique</h3>
@@ -275,31 +275,6 @@
     <p>Site développé par Leny &amp; Alan</p>
   </footer>
 
-  <script defer>
-    // JavaScript pour la gestion des onglets des équipes
-    document.addEventListener('DOMContentLoaded', function() {
-      const buttons = document.querySelectorAll('.category-btn');
-      const sections = document.querySelectorAll('.team-section');
-
-      buttons.forEach(button => {
-        button.addEventListener('click', () => {
-          const team = button.dataset.team;
-          
-          // Mise à jour des boutons
-          buttons.forEach(btn => btn.classList.remove('active'));
-          button.classList.add('active');
-          
-          // Mise à jour des sections
-          sections.forEach(section => {
-            if (section.id === `${team}-team`) {
-              section.classList.remove('hidden');
-            } else {
-              section.classList.add('hidden');
-            }
-          });
-        });
-      });
-    });
-  </script>
+  <script src="/main.js" defer></script>
 </body>
 </html>
