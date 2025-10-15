@@ -1,3 +1,15 @@
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^fc-fulbert7\.github\.io/FC-Fulbert [NC]
 RewriteRule ^(.*)$ https://fc-fulbert.site/$1 [L,R=301]
+
+# Redirection du classement
+RewriteRule ^classement\.html$ /tableau-classement [R=301,L]
+
+# Redirection des événements
+RewriteRule ^events/evt-2025-09-21-seniors-win\.html$ /actualites/2025/09/victoire-seniors-3-1 [R=301,L]
+RewriteRule ^events/evt-2025-10-12-u15\.html$ /actualites/2025/10/tournoi-u15 [R=301,L]
+
+# Ensure trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ /$1/ [L,R=301]
