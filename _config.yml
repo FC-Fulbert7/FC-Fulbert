@@ -1,0 +1,4 @@
+url: "https://fc-fulbert.site"
+enforce_ssl: true
+plugins:
+  - jekyll-redirect-from
