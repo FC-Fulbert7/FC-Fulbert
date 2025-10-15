@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KCNPK37J');</script>
+  <!-- End Google Tag Manager -->
+  
+  <!-- Meta SEO & Social -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classement - FC Fulbert</title>
+  <meta name="description" content="Classement des équipes du FC Fulbert et suivi des championnats. Consultez les résultats et le classement de nos équipes seniors, U15 et autres catégories.">
+  <meta name="keywords" content="FC Fulbert, classement, championnat, résultats, points, football, Chartres">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="FC Fulbert">
+  <link rel="canonical" href="https://fc-fulbert.site/classement.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="FC Fulbert">
+  <meta property="og:title" content="Classement - FC Fulbert">
+  <meta property="og:description" content="Consultez le classement et les résultats des équipes du FC Fulbert dans leurs championnats respectifs.">
+  <meta property="og:type" content="sports_team">
+  <meta property="og:url" content="https://fc-fulbert.site/classement.html">
+  <meta property="og:image" content="https://fc-fulbert.site/og-image.jpg">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCNPK37J"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="img/logoFC.png" alt="Logo FC Fulbert" class="logo-img">
+        <span class="logo-text">FC Fulbert</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="classement.html" class="active">Classement</a>
+        <a href="#equipes">Équipes</a>
+        <a href="#actualites">Actualités</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="classement-container">
+      <h1>Classements</h1>
+      
+      <!-- Sélecteur de catégorie -->
+      <div class="category-selector">
+        <button class="category-btn active" data-category="seniors">Seniors</button>
+        <button class="category-btn" data-category="u15">U15</button>
+        <button class="category-btn" data-category="feminines">Féminines</button>
+      </div>
+
+      <!-- Tableau de classement Seniors -->
+      <div class="standings-table" id="seniors-standings">
+        <h2>Championnat Départemental 2 - Seniors</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Club</th>
+              <th>Points</th>
+              <th>Joués</th>
+              <th>Gagnés</th>
+              <th>Nuls</th>
+              <th>Perdus</th>
+              <th>Buts Pour</th>
+              <th>Buts Contre</th>
+              <th>Diff.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Les données seront chargées dynamiquement via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Tableau de classement U15 -->
+      <div class="standings-table hidden" id="u15-standings">
+        <h2>Championnat Départemental - U15</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Club</th>
+              <th>Points</th>
+              <th>Joués</th>
+              <th>Gagnés</th>
+              <th>Nuls</th>
+              <th>Perdus</th>
+              <th>Buts Pour</th>
+              <th>Buts Contre</th>
+              <th>Diff.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Les données seront chargées dynamiquement via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Tableau de classement Féminines -->
+      <div class="standings-table hidden" id="feminines-standings">
+        <h2>Championnat Régional - Féminines</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Club</th>
+              <th>Points</th>
+              <th>Joués</th>
+              <th>Gagnés</th>
+              <th>Nuls</th>
+              <th>Perdus</th>
+              <th>Buts Pour</th>
+              <th>Buts Contre</th>
+              <th>Diff.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Les données seront chargées dynamiquement via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>FC Fulbert</h3>
+        <p>Club de football à Chartres</p>
+        <p>Stade Municipal</p>
+        <p>28000 Chartres</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: contact@fcfulbert.fr</p>
+        <p>Tél: 02.XX.XX.XX.XX</p>
+      </div>
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <div class="social-links">
+          <a href="#" target="_blank">Facebook</a>
+          <a href="#" target="_blank">Twitter</a>
+          <a href="#" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 FC Fulbert - Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // JavaScript pour la gestion des tableaux de classement
+    document.addEventListener('DOMContentLoaded', function() {
+      // Gestion des boutons de catégorie
+      const categoryButtons = document.querySelectorAll('.category-btn');
+      const standingsTables = document.querySelectorAll('.standings-table');
+
+      categoryButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Retirer la classe active de tous les boutons
+          categoryButtons.forEach(btn => btn.classList.remove('active'));
+          // Ajouter la classe active au bouton cliqué
+          button.classList.add('active');
+
+          // Cacher tous les tableaux
+          standingsTables.forEach(table => table.classList.add('hidden'));
+          // Afficher le tableau correspondant
+          document.getElementById(`${button.dataset.category}-standings`).classList.remove('hidden');
+        });
+      });
+
+      // Fonction pour charger les données de classement
+      async function loadStandings() {
+        try {
+          const response = await fetch('data/standings.json');
+          const data = await response.json();
+          
+          // Pour chaque catégorie, remplir le tableau correspondant
+          Object.keys(data).forEach(category => {
+            const tbody = document.querySelector(`#${category}-standings tbody`);
+            tbody.innerHTML = ''; // Vider le tableau existant
+            
+            data[category].forEach((team, index) => {
+              const row = document.createElement('tr');
+              row.innerHTML = `
+                <td>${index + 1}</td>
+                <td>${team.name}</td>
+                <td>${team.points}</td>
+                <td>${team.played}</td>
+                <td>${team.won}</td>
+                <td>${team.drawn}</td>
+                <td>${team.lost}</td>
+                <td>${team.goalsFor}</td>
+                <td>${team.goalsAgainst}</td>
+                <td>${team.goalsFor - team.goalsAgainst}</td>
+              `;
+              tbody.appendChild(row);
+            });
+          });
+        } catch (error) {
+          console.error('Erreur lors du chargement des données:', error);
+        }
+      }
+
+      // Charger les données initiales
+      loadStandings();
+    });
+  </script>
+</body>
+</html>
