@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^fc-fulbert7\.github\.io/FC-Fulbert [NC]
+RewriteRule ^(.*)$ https://fc-fulbert.site/$1 [L,R=301]
