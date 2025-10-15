@@ -823,6 +823,194 @@ ul > li, ol > li { margin-bottom: 10px; color: var(--muted); padding-left: 0; }
   font-size: 1.1rem;
 }
 
+/* Styles pour la page d'effectif */
+.effectif-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.effectif-section h1,
+.effectif-section h2,
+.effectif-section h3,
+.effectif-section h4,
+.effectif-section p {
+  text-align: center;
+}
+
+.team-category-selector {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  background: var(--bg-lighter);
+  color: var(--white);
+  border: 2px solid var(--glass);
+  border-radius: var(--radius);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.category-btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.category-btn.active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent-2);
+  box-shadow: 0 4px 12px rgba(255,209,77,0.3);
+}
+
+.team-section {
+  display: none;
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 2rem;
+  background: var(--panel);
+  border-radius: var(--radius);
+  border: 1px solid var(--glass);
+}
+
+.team-section.active {
+  display: block;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.staff-section {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: var(--glass);
+  border-radius: var(--radius);
+}
+
+.staff-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.staff-list li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: var(--bg-lighter);
+  border-radius: var(--radius);
+  border: 1px solid var(--glass);
+}
+
+.staff-list strong {
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.staff-details {
+  color: var(--muted);
+}
+
+.players-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem auto;
+}
+
+.position-group {
+  background: var(--glass);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.position-group h4 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.position-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.position-group li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.75rem 0;
+  padding: 0.5rem;
+  background: var(--bg-lighter);
+  border-radius: var(--radius);
+}
+
+.player-number {
+  background: var(--accent);
+  color: var(--bg);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.player-name {
+  color: var(--white);
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .effectif-section {
+    padding: 1rem;
+  }
+
+  .team-section {
+    padding: 1rem;
+  }
+
+  .players-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .category-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
 /* Styles pour la différence de buts */
 .standings-table td:last-child {
   font-weight: 600;

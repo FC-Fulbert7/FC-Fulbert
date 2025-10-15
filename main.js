@@ -244,32 +244,45 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Gestion des boutons de catégorie dans la page d'effectif
-  const categoryButtons = document.querySelectorAll('.team-category-selector .category-btn');
-  const teamSections = document.querySelectorAll('.team-section');
+  function initializeTeamButtons() {
+    const categoryButtons = document.querySelectorAll('.team-category-selector .category-btn');
+    const teamSections = document.querySelectorAll('.team-section');
 
-  if (categoryButtons.length > 0 && teamSections.length > 0) {
-    // Afficher la première section par défaut
-    teamSections[0].classList.add('active');
-    categoryButtons[0].classList.add('active');
-
-    categoryButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        // Retirer la classe active de tous les boutons
-        categoryButtons.forEach(btn => btn.classList.remove('active'));
-        // Ajouter la classe active au bouton cliqué
-        button.classList.add('active');
-
-        // Récupérer la catégorie sélectionnée
-        const selectedTeam = button.getAttribute('data-team');
-
-        // Masquer toutes les sections
-        teamSections.forEach(section => {
+    // Si on est sur la page d'effectif
+    if (categoryButtons.length > 0 && teamSections.length > 0) {
+      // Cacher toutes les sections sauf la première
+      teamSections.forEach((section, index) => {
+        if (index === 0) {
+          section.classList.add('active');
+        } else {
           section.classList.remove('active');
-          if (section.id === `${selectedTeam}-team`) {
-            section.classList.add('active');
-          }
+        }
+      });
+
+      // Activer le premier bouton
+      categoryButtons[0].classList.add('active');
+
+      // Ajouter les event listeners aux boutons
+      categoryButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Mettre à jour les boutons
+          categoryButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+
+          // Mettre à jour les sections
+          const selectedTeam = button.getAttribute('data-team');
+          teamSections.forEach(section => {
+            if (section.id === `${selectedTeam}-team`) {
+              section.classList.add('active');
+            } else {
+              section.classList.remove('active');
+            }
+          });
         });
       });
-    });
+    }
   }
+
+  // Initialiser les boutons d'équipe
+  initializeTeamButtons();
 });
