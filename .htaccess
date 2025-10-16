@@ -1,5 +1,22 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^fc-fulbert7\.github\.io/FC-Fulbert [NC]
+
+# Forcer HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirection de GitHub Pages vers le domaine principal
+RewriteCond %{HTTP_HOST} ^fc-fulbert7\.github\.io$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.fc-fulbert7\.github\.io$ [OR]
+RewriteCond %{HTTP_HOST} ^fc-fulbert\.github\.io$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.fc-fulbert\.github\.io$
+RewriteRule ^(.*)$ https://fc-fulbert.site/$1 [L,R=301]
+
+# Redirection du www vers non-www
+RewriteCond %{HTTP_HOST} ^www\.fc-fulbert\.site$ [NC]
+RewriteRule ^(.*)$ https://fc-fulbert.site/$1 [L,R=301]
+
+# Redirection de toutes les autres versions vers le domaine principal
+RewriteCond %{HTTP_HOST} !^fc-fulbert\.site$ [NC]
 RewriteRule ^(.*)$ https://fc-fulbert.site/$1 [L,R=301]
 
 # Redirection du classement
